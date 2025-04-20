@@ -1,0 +1,104 @@
+.navbar {
+  background-color: #ffffff; /* Set background to white for a clean look */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 12px 20px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #106EBE; /* Changed brand color to Blue */
+  text-decoration: none;
+}
+
+.navbar-toggler {
+  display: none; /* Keep hidden on larger screens */
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.navbar-menu {
+  display: flex; /* Display flex layout */
+  align-items: center;
+}
+
+.navbar-links {
+  display: flex; /* Flex for horizontal menu items */
+  list-style: none; /* Remove default bullets */
+  gap: 20px; /* Space between links */
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-links a {
+  text-decoration: none; /* Remove underline */
+  color: #323232; /* Dark grey color for links */
+  font-size: 1rem;
+  transition: color 0.3s; /* Smooth transition for color change */
+}
+
+.navbar-links a:hover {
+  color: #0FFCBE; /* Change hover color to Mint */
+}
+
+.navbar-buttons {
+  display: flex; /* Flex layout for buttons */
+  gap: 10px; /* Space between buttons */
+}
+
+.btn {
+  padding: 8px 16px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: all 0.3s; /* Smooth transitions for button states */
+}
+
+.btn-outline {
+  border: 2px solid #106EBE; /* Outline color set to Blue */
+  color: #106EBE; /* Text color set to Blue */
+}
+
+.btn-outline:hover {
+  background-color: #e3f2fd; /* Light blue background on hover */
+}
+
+.btn-primary {
+  background-color: #106EBE; /* Primary button set to Blue */
+  color: white; /* White text color */
+}
+
+.btn-primary:hover {
+  background-color: #0FFCBE; /* Change to Mint on hover */
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .navbar-toggler {
+      display: block; /* Display toggler on smaller screens */
+  }
+
+  .navbar-menu {
+      display: none; /* Hidden menu by default */
+      flex-direction: column; /* Stack items vertically */
+      gap: 10px; /* Space between items */
+  }
+
+  .navbar-menu.active {
+      display: flex; /* Show menu when active */
+  }
+
+  .navbar-links {
+      flex-direction: column; /* Stack links vertically on small screens */
+  }
+}

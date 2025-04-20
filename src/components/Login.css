@@ -1,0 +1,55 @@
+.login-container {
+  width: 350px; /* Fixed width for consistency */
+  margin: 100px auto; /* Centering the container */
+  padding: 30px; /* Padding for spacing */
+  background: #ffffff; /* Keeping the background white for clarity */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
+  text-align: center; /* Centered text */
+}
+
+h2 {
+  margin-bottom: 20px; /* Spacing below the heading */
+  color: #106EBE; /* Changed heading color to Blue */
+}
+
+form {
+  display: flex; /* Flex based layout for form */
+  flex-direction: column; /* Vertical stacking of form fields */
+}
+
+input {
+  width: 100%; /* Full width inputs */
+  padding: 12px; /* Inner spacing for inputs */
+  margin-bottom: 15px; /* Spacing between inputs */
+  border: 1px solid #ddd; /* Default border color */
+  border-radius: 5px; /* Rounded corners for inputs */
+  font-size: 16px; /* Font size */
+  transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+}
+
+input:focus {
+  outline: none; /* Remove default outline */
+  border-color: #106EBE; /* Change border color to Blue on focus */
+  box-shadow: 0px 0px 5px rgba(16, 110, 190, 0.5); /* Soft blue shadow on focus */
+}
+
+button {
+  background: #106EBE; /* Changed button background to Blue */
+  color: #fff; /* White text color */
+  border: none; /* No border */
+  padding: 12px; /* Consistent padding */
+  border-radius: 5px; /* Rounded corners */
+  font-size: 18px; /* Increased font size */
+  cursor: pointer; /* Pointer cursor for button */
+  transition: background 0.3s ease, transform 0.2s ease; /* Transition effects for hover */
+}
+
+button:hover {
+  background: #0FFCBE; /* Mint color on hover for a vibrant look */
+  transform: scale(1.05); /* Slight enlargement effect on hover */
+}
+
+button:active {
+  transform: scale(0.95); /* Subtle shrink effect on click */
+}

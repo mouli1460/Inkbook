@@ -1,0 +1,55 @@
+.signup-container {
+  max-width: 400px; /* Maximum width to keep the signup form neat */
+  margin: 50px auto; /* Centering the container vertically and horizontally */
+  padding: 20px; /* Inner spacing */
+  background: #ffffff; /* White background for a clear appearance */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  border-radius: 8px; /* Rounded corners for a modern look */
+  text-align: center; /* Center content within the container */
+}
+
+.signup-container h2 {
+  margin-bottom: 20px; /* Space below the heading */
+  color: #106EBE; /* Header color changed to Blue */
+}
+
+.signup-container input {
+  width: 100%; /* Full width for input fields */
+  padding: 10px; /* Inner spacing for inputs */
+  margin-bottom: 15px; /* Space below each input */
+  border: 1px solid #ccc; /* Default border color */
+  border-radius: 5px; /* Rounded corners for inputs */
+  font-size: 16px; /* Font size for input fields */
+  transition: border-color 0.3s, box-shadow 0.3s; /* Smooth transitions */
+}
+
+.signup-container input:focus {
+  border-color: #106EBE; /* Change border color to Blue on focus */
+  box-shadow: 0 0 5px rgba(16, 110, 190, 0.5); /* Blue shadow on focus for emphasis */
+}
+
+.signup-container button {
+  width: 100%; /* Full width for the button */
+  padding: 10px; /* Inner spacing for the button */
+  background: #106EBE; /* Background color set to Blue */
+  color: white; /* White text color for contrast */
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded corners for the button */
+  font-size: 16px; /* Font size for the button text */
+  cursor: pointer; /* Pointer cursor when hovering */
+  transition: background 0.3s, transform 0.2s; /* Smooth transitions for hover effects */
+}
+
+.signup-container button:hover {
+  background: #0FFCBE; /* Change background to Mint on hover */
+  transform: scale(1.05); /* Slight scaling effect on hover for engagement */
+}
+
+.signup-container button:active {
+  transform: scale(0.95); /* Slightly shrink button on active click */
+}
+
+.error {
+  color: red; /* Error text color */
+  margin-bottom: 10px; /* Space below error messages */
+}

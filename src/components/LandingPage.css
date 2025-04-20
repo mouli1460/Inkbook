@@ -1,0 +1,153 @@
+/* Fullscreen layout */
+.landing-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: linear-gradient(135deg, #106EBE, #0A4D8C); /* Blue gradient background */
+  color: white;
+  padding: 40px;
+  animation: fadeIn 1s ease-in-out;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Content wrapper */
+.landing-content {
+  max-width: 650px;
+  padding: 40px;
+  background: rgba(16, 110, 190, 0.2); /* Semi-transparent blue background */
+  border-radius: 16px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(15, 252, 190, 0.3); /* Mint border for contrast */
+  animation: slideIn 1s ease-in-out;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Title styling */
+.landing-title {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #0FFCBE; /* Mint color for the title */
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  animation: fadeIn 1.2s ease-in-out;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Highlighted text */
+.highlight {
+  color: #0FFCBE; /* Mint highlight for emphasis */
+  font-weight: 700;
+}
+
+/* Subtitle styling */
+.landing-subtitle {
+  font-size: 1.4rem;
+  margin-bottom: 25px;
+  opacity: 0.9;
+  color: rgba(255, 255, 255, 0.9); /* White with slight transparency */
+  animation: fadeIn 1.5s ease-in-out;
+  font-weight: 400;
+  letter-spacing: 1px;
+  line-height: 1.6;
+}
+
+/* Button styling */
+.landing-button {
+  background: linear-gradient(45deg, #0FFCBE, #0ACF9E); /* Mint gradient background */
+  color: #106EBE; /* Blue text for contrast */
+  font-size: 1.2rem;
+  padding: 14px 32px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+  animation: scaleIn 1.3s ease-in-out;
+  text-transform: uppercase;
+  margin-top: 30px;
+  position: relative;
+  overflow: hidden;
+}
+
+.landing-button:hover {
+  background: linear-gradient(45deg, #0ACF9E, #0FFCBE); /* Reverse mint gradient on hover */
+  transform: translateY(-4px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  color: #0A4D8C; /* Darker blue text on hover */
+}
+
+.landing-button:focus {
+  outline: none;
+  border: 2px solid #0FFCBE; /* Mint border on focus */
+}
+
+.landing-button::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  transform: translateX(-100%);
+  transition: transform 0.3s ease-out;
+}
+
+.landing-button:hover::after {
+  transform: translateX(0);
+}
+
+/* Keyframe animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Adding a subtle pulse animation for interactive elements */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.landing-button:hover {
+  animation: pulse 1.5s infinite;
+}
